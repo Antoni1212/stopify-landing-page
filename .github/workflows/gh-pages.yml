@@ -31,3 +31,5 @@ jobs:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./website/public
 
+      - name: Github Pull Request
+        uses: repo-sync/pull-request@master
