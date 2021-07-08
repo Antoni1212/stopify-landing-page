@@ -27,6 +27,8 @@ CTRL+C ou `docker-compose down`
 ### Changer la version d'hugo installée dans l'image Docker
 
 \\ À écrire \\
+
+
 Brie1-2
 ## Procédure d'Intégration et Déploiement Continu sur GitHub Pages
 L'intégration et le déploiement continus sur `GitHub Pages` sont effectués via github actions.
