@@ -1,3 +1,4 @@
+Brief_1-1
 # landing-page
 ## Présentation
 Le mini site de l'entreprise contient 2 pages :
@@ -29,7 +30,7 @@ CTRL+C ou `docker-compose down`
 \\ À écrire \\
 
 
-Brie1-2
+Brief_1-2
 ## Procédure d'Intégration et Déploiement Continu sur GitHub Pages
 L'intégration et le déploiement continus sur `GitHub Pages` sont effectués via github actions.
 Le fichier `.github/workflows/gh-pages.yml` définis les actions effectuées :
@@ -43,6 +44,17 @@ Le fichier `.github/workflows/gh-pages.yml` définis les actions effectuées :
 
 //WIP// À faire :
 - faire une pull request pour merger cette branche dans main et adapter github actions en conséquence
+
+	.Cloner le projet en local(si ce n'est pas déjà fait)
+	.Changer de branche pour pouvoir faire des modification de ci-cd avec la commande suivante : git workout ci-cd
+	.Ouvrir le fichier gh-pages.yml qui se trouve dans .github/workflow/
+		.modification de l'action on push qui se fait à présent sur la branche main (à la place de ci-cd)
+		.modification de la version de hugo (passage à la version 0.85.0)
+		.modification de la partie Deploy pour metrte à jour à partir de la branche main (if: github.ref == 'ref/head/main')
+	.Pousser le prjet sur github
+
+	.Puis faire le pull request depuis le site github, réparer les conflits qui se trouvent sur le fichier README.md
+	.Enfin accepter le merge de la pull request (pour que le fichier .githu/wokflow/gh-pages.yml soit présent dans la branche main) 
 
 ### Vérification
 Pour vérifier l'exécution de GitHub Actions il faut client sur l'onglet "Actions" du dépôt sur github.com.  
