@@ -7,5 +7,5 @@ draft: false
 
 ### Comment nous contacter ?
 Vous pouvez remplir le formulaire ci-contre ou bien nous contacter directement :
-* **Téléphone: +33 000 222 333** 
+* **Téléphone: +33 000 000 333** 
 * **Mail: info@stopify.fr**
