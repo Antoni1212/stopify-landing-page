@@ -25,8 +25,9 @@ Un service nommé `dev_server` est défini dans le fichier docker-compose.yml.
 CTRL+C ou `docker-compose down`
 
 ### Changer la version d'hugo installée dans l'image Docker
-\\ À écrire \\
 
+\\ À écrire \\
+Brie1-2
 ## Procédure d'Intégration et Déploiement Continu sur GitHub Pages
 L'intégration et le déploiement continus sur `GitHub Pages` sont effectués via github actions.
 Le fichier `.github/workflows/gh-pages.yml` définis les actions effectuées :
@@ -63,3 +64,7 @@ Si vous voyez une erreur 404 "There isn't a GitHub Pages site here." il y a 2 pr
 #### Erreur d'affichages des images
 Si le FQDN GitHub Pages ne correspond pas à celui configuré comme `baseURL` dans hugo, il se peut que les images ne s'affichent pas correctement.
 Changer la propriété `baseURL` pour la valeur correspondant dans le fichier `website/config/gh-pages/config.yml`
+
+Dans docker-image/_script/, modifier le fichier hugo.sh : changer la version de hugo pour la passer en 0.85.0 (à la place de 0.81.0).
+
+
