@@ -65,7 +65,7 @@ Le fichier `.github/workflows/gh-pages.yml` définis les actions effectuées :
 
 ### Vérification
 Pour vérifier l'exécution de GitHub Actions il faut client sur l'onglet "Actions" du dépôt sur github.com.  
-Pour accéder au site il faut se rendre sur l'url `https://<votreid>.github.io/stopify-landing-page/`.
+Pour accéder au site il faut se rendre sur l'url `https://antoni1212.github.io/stopify-landing-page/`.
 
 ### Erreurs connues
 #### GitHub Actions ne se déclenche pas
