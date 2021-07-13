@@ -31,3 +31,12 @@ jobs:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./website/public
 
+      - name: Hugo S3
+  # You may pin to the exact commit or the version.
+  # uses: plopcas/hugo-s3-action@1c4cede6baf90aecf5d595d917327d7b200e1222
+        uses: plopcas/hugo-s3-action@v1.4.0
+        env:
+          AWS_REGION: 'eu-west-3'
+          AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
+          AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+          MINIFY: 'true'
