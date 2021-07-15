@@ -32,7 +32,7 @@ jobs:
           publish_dir: ./website/public
 
       - name: Hugo S3
-        run: hugo deploy --target Stopify --config /theme/bigspring/config.toml
+        run: hugo deploy --target Stopify --config /src/theme/bigspring/config.toml
         env:
           AWS_REGION: 'eu-west-3'
           AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
