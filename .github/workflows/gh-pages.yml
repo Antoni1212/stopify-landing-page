@@ -31,11 +31,8 @@ jobs:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./website/public
 
-      - name: Build S3
-        run: hugo --minify -e s3 -s website
-
-      - name: deploy S3
-        run: hugo deploy
+      - name: Deploy S3
+        run: hugo deploy -e s3 -s website
         env:
           AWS_REGION: 'eu-west-3'
           AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
