@@ -31,6 +31,9 @@ jobs:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./website/public
 
+      - name: Build
+        run: hugo --minify -e s3 -s website
+
       - name: Deploy S3
         run: hugo deploy -e s3 -s website
         env:
