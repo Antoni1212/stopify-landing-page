@@ -33,7 +33,7 @@ jobs:
           keep_files: true
           
       - name: Hugo S3
-        run: hugo deploy -s website --config website/themes/bigspring/config.tolm
+        run: hugo deploy --target Stopify -s website --config website/themes/bigspring/config.tolm
         env:
           AWS_REGION: 'eu-west-3'
           AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
