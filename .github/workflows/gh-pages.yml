@@ -22,14 +22,14 @@ jobs:
           extended: true
 
       - name: Build
-        run: hugo --minify -e gh-pages -s website2
+        run: hugo --minify -e gh-pages -s website
 
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
         if: github.ref == 'refs/heads/main'
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./website2/public
+          publish_dir: ./website/public
 
 #      - name: Build S3
 #        run: hugo --minify -e s3 -s website
