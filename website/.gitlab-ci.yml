@@ -5,9 +5,9 @@ variables:
 
 pages:
   script:
-  - hugo
+  - hugo -e gh-pages -s website
   artifacts:
     paths:
-    - public
+    - website/public
   only:
-  - master
+  - main
